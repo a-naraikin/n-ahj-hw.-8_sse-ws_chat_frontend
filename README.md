@@ -2,7 +2,7 @@
 
 ## [веб-сайт](https://a-naraikin.github.io/n-ahj-hw.-8_sse-ws_chat_frontend/)
 
-## Домашняя работа «EventSource, Websockets: Chat
+## Домашняя работа «EventSource, Websockets: Chat»
 
 Правила сдачи задания:
 
