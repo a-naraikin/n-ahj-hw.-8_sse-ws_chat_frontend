@@ -23,8 +23,9 @@ export default class Chat {
     this.listUsers = container.querySelector('.listUsers');
     this.form = container.querySelector('.chatForm');
     this.input = container.querySelector('input');
-    this.ws = new WebSocket('wss://ahjchat.herokuapp.com/ws');
+    // this.ws = new WebSocket('ws://ahjchat.herokuapp.com/ws');
     /// this.ws = new WebSocket('ws://localhost:7070/ws');
+    this.ws = new WebSocket('ws://whispering-plains-26441.herokuapp.com/ws');
   }
 
   async init() {
@@ -96,8 +97,9 @@ export default class Chat {
       date: getTime(),
     };
 
-    const api = new API('https://ahjchat.herokuapp.com/message');
+    // const api = new API('https://ahjchat.herokuapp.com/message');
     // const api = new API('http://localhost:7070/message');
+    const api = new API('https://whispering-plains-26441.herokuapp.com/message');
     const response = await api.send(message);
     if (response.status === 200 && response.ok) {
       this.input.value = '';
